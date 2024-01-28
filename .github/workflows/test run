@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHARMART - Online Pharmacy</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Main Styles */
+    main {
+      text-align: center;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 0;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .hero .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Featured Products Section Styles */
+    .featured-products {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .featured-products h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .product {
+      display: inline-block;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .product .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Prescription Form Section Styles */
+    .prescription-form {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .prescription-form h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .prescription-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .prescription-form label {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .prescription-form input,
+    .prescription-form textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .prescription-form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Prescription</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to PHARMART</h1>
+      <p>Your trusted online pharmacy, providing quality healthcare solutions. Explore a wide range of pharmaceuticals and health products.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1" />
+        <h3>Headache Relief</h3>
+        <p>Relieve your headaches with our advanced formula, providing fast and effective pain relief. Trust us for your well-being.</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2" />
+        <h3>Heart Health Capsules</h3>
+        <p>Promote a healthy heart with our specially crafted capsules. Take a step towards a healthier you.</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3" />
+        <h3>Immune Boosters</h3>
+        <p>Enhance your immune system with our natural boosters, providing defense against common illnesses.</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </section>
+
+    <section class="prescription-form">
+      <h2>Prescription Form</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="prescription">Prescription Details:</label>
+        <textarea id="prescription" name="prescription" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PHARMART. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
