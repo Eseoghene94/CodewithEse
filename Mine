@@ -1,1 +1,32 @@
-ESEOGHENE 
+// server.js
+
+const { spawn } = require('child_process');
+const express = require('express');
+const app = express();
+
+// Run the Java backend
+const javaBackend = spawn('java', ['-cp', 'java/src', 'Main']);
+
+javaBackend.stdout.on('data', function (data) {
+    console.log('Java Backend Output:', data.toString());
+});
+
+javaBackend.stderr.on('data', function (data) {
+    console.error('Java Backend Error:', data.toString());
+});
+
+javaBackend.on('close', function (code) {
+    console.log('Java Backend process exited with code', code);
+});
+
+// Serve some Node.js routes
+app.get('/', function (req, res) {
+    res.send('Node.js Server is running.');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
+    console.log('Node.js Server listening on port', PORT);
+});
+
+// ESEOGHENE DAVID
